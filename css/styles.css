@@ -1,0 +1,96 @@
+
+body {
+	background-color: black;
+}
+
+#container {
+  width: 100%;
+  height: 1000px;
+  background-color: black;     
+}
+#contain {
+	width: 100%;
+	height: 150px;
+	animation: colorchange 4s linear infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 4s linear infinite; /* Chrome and Safari */
+      }
+@keyframes colorchange
+    {
+      0%   {background: black;}
+      25%  {background: purple;}
+      50%  {background: violet;}
+      75%  {background: white;}
+      100% {background: black;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+       0%   {background: black;}
+      25%  {background: purple;}
+      50%  {background: violet;}
+      75%  {background: white;}
+      100% {background: black;}
+    }
+
+h1 {
+	color: white;
+	z-index: 999;
+	text-align: center;
+	font-size: 60px;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+#vid {
+	display: block;
+	margin: 0 auto;
+}
+h2 {
+	text-align: center;
+	margin-top: -80px;
+	color: white;
+	z-index: 999;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 60px;
+	  animation: fadein 60s;
+    -moz-animation: fadein 60s; /* Firefox */
+    -webkit-animation: fadein 60s; /* Safari and Chrome */
+    -o-animation: fadein 60s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+    
